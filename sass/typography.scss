@@ -1,15 +1,15 @@
 
-@include font-face('share_tech', '../fonts/ShareTech/sharetech-regular-webfont', 400, 'normal');
+@include font-face('share_tech', './fonts/ShareTech/sharetech-regular-webfont', 400, 'normal');
 
-@include font-face('tulpen', '../fonts/TupenOne/tulpenone-regular-webfont', 400, 'normal');
+@include font-face('tulpen', './fonts/TupenOne/tulpenone-regular-webfont', 400, 'normal');
 
-@include font-face('open sans', '../fonts/Open-Sans/opensans_light_macroman', 100, 'normal');
-@include font-face('open sans', '../fonts/Open-Sans/opensans_regular_macroman', 400, 'normal');
-@include font-face('open sans', '../fonts/Open-Sans/opensans_semibold_macroman', 600, 'normal');
+// @include font-face('open sans', './fonts/Open-Sans/opensans_light_macroman', 100, 'normal');
+// @include font-face('open sans', './fonts/Open-Sans/opensans_regular_macroman', 400, 'normal');
+// @include font-face('open sans', './fonts/Open-Sans/opensans_semibold_macroman', 600, 'normal');
 
-@include font-face('open sans', '../fonts/Open-Sans/opensans_lightitalic_macroman', 100, 'italic');
-@include font-face('open sans', '../fonts/Open-Sans/opensans_italic_macroman', 400, 'italic');
-@include font-face('open sans', '../fonts/Open-Sans/opensans_semibolditalic_macroman', 600, 'italic');
+// @include font-face('open sans', './fonts/Open-Sans/opensans_lightitalic_macroman', 100, 'italic');
+// @include font-face('open sans', './fonts/Open-Sans/opensans_italic_macroman', 400, 'italic');
+// @include font-face('open sans', './fonts/Open-Sans/opensans_semibolditalic_macroman', 600, 'italic');
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +25,7 @@ h1 {
   position: absolute;
   bottom: 20%;
   left: 10%;
+  z-index: 600;
   // font-size: 60px;
   font-size: 100px;
   letter-spacing: 2px;
@@ -69,7 +70,7 @@ p:first-child {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   /* @font-face {
        font-family: 'lane-narrow';
-       src: url('../fonts/lanenar_-webfont.svg#lane_-_narrowregular') format('svg');
+       src: url('./fonts/lanenar_-webfont.svg#lane_-_narrowregular') format('svg');
    }
    p {
      font-weight: 800;

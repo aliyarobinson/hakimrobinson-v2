@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 		},
 		concat: {
 			task: {
-				src: ['js/ayrUtils.js', 'js/d3.js', 'js/script.js'], 
+				src: ['js/navigation.js', 'js/skip-link-focus-fix.js', 'js/script.js'], 
 				dest: 'js/bundle.js'
 			},
 			options: {
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 		      options: {
 		      },
 		      files: {
-		         'css/style.min.css': ['css/style.css']
+		         'css/style.min.css': ['style.css']
 		      }
 		  }
 		},
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 		sass: {
 			task: {
 				src: ['sass/site.scss'], 
-				dest: 'css/style.css'
+				dest: 'style.css'
 			},
 			options: {
 				// 'sourcemap': 'auto',
