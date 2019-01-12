@@ -91,7 +91,7 @@ h1 {
   position: absolute;
   bottom: 20%;
   left: 10%;
-  z-index: 600;
+  z-index: 550;
   font-size: 100px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -437,6 +437,20 @@ img {
   height: auto;
 }
 
+.alignright {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin: 10px 0 10px 10px;
+}
+
+.alignleft {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin: 10px 10px 10px 0;
+}
+
 section .wrapper {
   flex-direction: column;
 }
@@ -573,7 +587,7 @@ section .section-desc {
   width: 100%;
   position: fixed;
   z-index: 600;
-  top: 10px;
+  top: 0;
   left: 0;
   transition: 600ms;
   height: 80px;
@@ -584,6 +598,7 @@ section .section-desc {
   padding-bottom: 0;
   height: 70px;
   align-items: center;
+  padding: 10px 0 0;
 }
 .site-header .logo {
   height: 100%;
@@ -795,6 +810,16 @@ section .section-desc {
   left: 0;
   z-index: 300;
 }
+.hero .subtitle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 800;
+  color: #fff;
+  transform: translateX(-50%);
+  font: 100 20px "Open Sans", arial, sans-serif;
+  opacity: 0.5;
+}
 .hero .hero-img {
   position: absolute;
   overflow: hidden;
@@ -811,6 +836,7 @@ section .section-desc {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0px;
+  z-index: 550;
 }
 
 /*******************************
@@ -1203,6 +1229,9 @@ section .section-desc {
   .hero {
     height: 160px;
   }
+  .hero .subtitle {
+    font-size: 18px;
+  }
 
   .grid {
     flex-direction: column;
@@ -1253,6 +1282,13 @@ section .section-desc {
   .play-btn {
     max-width: 60px;
     max-height: 60px;
+  }
+
+  .hero .subtitle {
+    font-size: 16px;
+  }
+  .hero .hero-img {
+    width: 110%;
   }
 }
 

@@ -216,6 +216,20 @@ img {
   height: auto;
 }
 
+.alignright {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin: 10px 0 10px 10px;
+}
+
+.alignleft {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin: 10px 10px 10px 0;
+}
+
 section {
   // padding: 40px 0;
 
@@ -373,10 +387,11 @@ section {
   width: 100%;
   position: fixed;
   z-index: 600;
-  top: 10px;
+  top: 0;
   left: 0;
   transition: 600ms;
   height: 80px;
+
 
   .wrapper {
     display: flex;
@@ -384,6 +399,7 @@ section {
     padding-bottom: 0;
     height: 70px;
     align-items: center;
+    padding: 10px 0 0;
   }
 
   .logo {
@@ -686,6 +702,17 @@ section {
     z-index: 300;
   }
 
+  .subtitle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 800;
+    color: #fff;
+    transform: translateX(-50%);
+    font: 100 20px 'Open Sans', arial, sans-serif;
+    opacity: 0.5;
+  }
+
   .hero-img {
     position: absolute;
     overflow: hidden;
@@ -703,6 +730,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
+    z-index: 550;
   }
 }
 
@@ -1200,6 +1228,10 @@ section {
 
   .hero {
     height: 160px;
+
+    .subtitle {
+      font-size: 18px;
+    }
   }
 
   .grid {
@@ -1286,6 +1318,15 @@ section {
   .play-btn {
     max-width: 60px;
     max-height: 60px;
+  }
+
+  .hero {
+    .subtitle {
+      font-size: 16px;
+    }
+    .hero-img {
+      width: 110%;
+    }
   }
 }
 
