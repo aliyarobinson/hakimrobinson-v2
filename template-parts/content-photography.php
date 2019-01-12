@@ -21,9 +21,9 @@
             <div class="wrapper">
                 <header class="section-header grid">
                     <h2 class="section-title grid-cell"><?php the_field('header_title'); ?></h2>
-                    <p class="section-desc grid-cell">
+                    <div class="section-desc grid-cell">
                         <?php the_field('header_description'); ?>
-                    </p>
+                    </div>
                 </header>
                 <section class="section-content">
                     <blockquote class="big-quote">
